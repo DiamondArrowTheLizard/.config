@@ -1,0 +1,224 @@
+{ "reload_style_on_change": true,
+    "layer": "top", 
+    "position": "top",
+    "spacing": 0, 
+
+    "modules-left": [
+        "custom/menu",
+        "niri/workspaces",
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "backlight",
+        "group/network-zapret",
+        "group/sound",
+        "battery",
+        "group/cpu-temp",
+        "memory",
+        "niri/language",
+        "tray",
+    ],
+
+    "niri/language": {
+        "format": "<span font_size='11pt'>{}</span>",
+        "format-en": "en",
+        "format-ru": "ru",
+    },
+
+    "niri/workspaces": {
+        "format": "<i><span font_size='7pt'>{index}</span></i><span font_size='10pt'>{icon}</span>",
+        "format-icons": {
+            "System": "System",
+            "Media": "Media",
+            "Game": "Game",
+            "Config": "Config",
+            "Web": "Web",
+            "Dev": "Dev",
+
+            "default": "Misc",
+
+            /*
+"System": "",
+"Media": "",
+"Game": "󰺷",
+"Config": "",
+"Web": "󰖟",
+"Dev": "",
+
+"default": "",
+*/
+        },
+    },
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": false,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 15
+    },
+
+    "clock": {
+        "format": "<span font_size='11pt'>{:%H:%M}</span>",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#a67e9e'><b>{}</b></span>",
+                "days":       "<span color='#5e3394'><b>{}</b></span>",
+                "weeks":      "<span color='#4c2679'><b>W{}</b></span>",
+                "weekdays":   "<span color='#caa94f'><b>{}</b></span>",
+                "today":      "<span color='#b64444'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "cpu": {
+        "format": "<span font_size='15pt'></span><span font_size='7pt'>{usage}%</span>",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "<span font_size='15pt'></span><span font_size='7pt'>{}%</span>",
+        "tooltip": true
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "<span font_size='12pt'>{icon}</span><span font_size='7pt'>{temperatureC}󰔄</span>",
+        "format": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{temperatureC}󰔄</span>",
+        "format-icons": ["", "", ""],
+        "tooltip": false
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{percent}%</span>",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": true,
+        "tooltip-format": "Backlight"
+    },
+    "battery": {
+        "states": {
+            "good": 100,
+            "warning": 49,
+            "critical": 20
+        },
+        "format": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{capacity}%</span>",
+        "format-plugged": "<span font_size='7pt'>{capacity}%</span>",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-wifi": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{signalStrength}%</span>",
+        "format-ethernet": " ",
+        "tooltip-format": "{essid}",
+        "format-linked": " <small><sub>No IP</sub></small>",
+        "format-disconnected": "<big>⚠</big><small><sub>Dwn</sub></small>",
+        "on-click": "exec nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5, // %, can be a float
+        "format": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{volume}%</span>",
+        "format-bluetooth": " <big>{icon}</big>{volume}%",
+        "format-bluetooth-muted": " ",
+        "format-muted": "<span font_size='15pt'></span><span font_size='7pt'>off</span>",
+        // "on-click": "pavucontrol",
+        // "on-click-right": "foot -a pw-top pw-top"
+    },
+
+    "pulseaudio#mic": {
+        "format": "{format_source}",
+        "format-source": "<span font_size='15pt'>󰍬</span><span font_size='7pt'>on </span>",
+        "format-source-muted": "<span font_size='15pt'>󰍭</span><span font_size='7pt'>off</span>",
+    },
+
+    "custom/zapret-status": {
+        "interval": 5,
+        "exec": "$HOME/.config/waybar/zapret-status.sh",
+        "return-type": "text",
+        "tooltip-format": "zapret service status \nClick to toggle",
+        "on-click": "$HOME/.config/waybar/toggle-zapret.sh",
+        "format":"<span font_size='7pt'>{text}</span>"
+    },
+
+    "custom/menu": {
+        "format" : "<span font_size='15pt'>󰣇</span>",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "update": "kitty yay && flatpak update",
+            "shutdown": "poweroff",
+            "reboot": "reboot",
+        }
+    },
+    "group/cpu-temp": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "children-class": "not-cpu",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "cpu",
+            "temperature",
+        ]
+    },
+
+    "group/network-zapret" : {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "children-class": "not-wifi",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "network",
+            "custom/zapret-status",
+        ]
+    },
+
+    "group/sound": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "children-class": "not-pulseaudio",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio#mic",
+        ],
+
+    },
+
+}

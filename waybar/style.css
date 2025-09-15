@@ -1,0 +1,383 @@
+* {
+	font-family: "JetBrainsMono Nerd Font Mono", "FontAwesome 6 Free", "Symbols Nerd Font Mono";
+	min-height: 0;
+}
+
+window {
+	color: @theme_text_color;
+	background: transparent;
+	font-weight: normal;
+}
+
+window#waybar {
+	opacity: 1;
+	border-radius: 12px;
+	transition-duration: 1.0s;
+	transition-property: window;
+	transition-duration: .5s;
+
+
+}
+
+box.modules-left {
+	background: alpha(@theme_base_color, 0.4);
+
+	border-radius: 12px;
+	border-width: 1px;
+
+	border: 1px solid alpha(@borders, 0.5);
+
+	box-shadow: 0px 0px 4px #070017;
+
+	letter-spacing: 1px;
+
+	padding-left: 0px;
+	padding-right: 10px;
+
+	margin-left: 16px;
+	margin-right: 0px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+
+}
+
+#custom-menu {
+	transition-duration: 1.0s;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 0px;
+	
+}
+
+#custom-menu:hover {
+	transition-duration: 1.0s;
+	text-shadow: 1px 0px 0px @borders;
+	color: @theme_selected_bg_color;
+}
+
+
+#workspaces button {
+	all: initial;
+	transition-duration: 0.5s;
+
+	border: 1px solid transparent;
+	letter-spacing: 1px;
+
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 15px;
+	margin-right: 0px;
+
+	padding: 0px 10pt;
+	padding-right: 11pt;
+}
+
+#workspaces button.focused {
+	transition-duration: 1.0s;
+	background: alpha(@theme_selected_bg_color, 1.0);
+
+	border-radius: 5px;
+
+	border: 1px solid @borders;
+
+	opacity: 1.0;
+}
+
+
+#workspaces button.focused:hover {
+	transition-duration: 1.0s;
+	background: alpha(@theme_selected_bg_color, 1.0);
+
+	border-radius: 5px;
+/*
+	border-left: 1px solid rgba(109, 57, 175, 0.15);
+	border-right: 1px solid rgba(109, 57, 175, 0.15);
+	border-top: 1px solid rgba(109, 57, 175, 0.15);
+	border-bottom: 1px solid rgba(109, 57, 175, 0.15);
+*/
+	border: 1px solid @theme_selected_bg_color;
+
+	opacity: 1.0;
+}
+
+#workspaces button.urgent {
+	transition-duration: 0.2s;
+	background: #e8c060;
+
+	border-radius: 5px;
+
+	border-left: 1px solid #000027;
+	border-right: 1px solid #000027;
+	border-top: 1px solid #000027;
+	border-bottom: 1px solid #000027;
+
+}
+
+#workspaces button:hover {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	transition-duration: 1.0s;
+	background: alpha(@theme_selected_bg_color, 0.3);
+
+	border-radius: 5px;
+
+	border: 1px solid alpha(@theme_selected_bg_color, 0.2);
+
+	opacity: 0.8;
+}
+
+
+#workspaces button#niri-workspace-System {
+	transition-duration: 0.5s;
+}
+
+#workspaces button#niri-workspace-Media {
+	transition-duration: 0.5s;
+}
+
+#workspaces button#niri-workspace-Game {
+	transition-duration: 0.5s;
+}
+
+#workspaces button#niri-workspace-Web {
+	transition-duration: 0.5s;
+}
+
+#workspaces button#niri-workspace-Dev {
+	transition-duration: 0.5s;
+}
+
+box.modules-center {
+	all: initial;
+	background: alpha(@theme_base_color, 0.4);
+
+	border-radius: 12px;
+	border-width: 1px;
+
+	border: 1px solid alpha(@borders, 0.5);
+
+	box-shadow: 0px 0px 4px #070017;
+
+	letter-spacing: 1px;
+
+	padding-left: 2mm;
+	padding-right: 2mm;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+
+}
+
+#clock {
+	padding: 0px 5px;
+	margin: 0px 15px;
+}
+
+
+box.modules-right {
+	all: initial;
+	background: alpha(@theme_base_color, 0.4);
+
+	border-radius: 12px;
+	border-width: 1px;
+
+	border: 1px solid alpha(@borders, 0.5);
+
+	box-shadow: 0px 0px 4px #070017;
+
+	letter-spacing: 1px;
+
+	padding-left: 2mm;
+	padding-right: 2mm;
+
+	margin-left: 0px;
+	margin-right: 16px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+
+}
+
+#backlight {
+	background: transparent;
+	
+	padding: 0px 5px;
+	margin: 0px 10px;
+	margin-left: 15px;
+}
+
+#network-zapret {
+	background: transparent;
+	
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#network {
+	background: transparent;
+	
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+#custom-zapret-status {
+	background: transparent;
+	
+	padding: 0px 0px;
+	margin: 0px 5px;
+}
+
+#pulseaudio {
+	background: transparent;
+	
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+#pulseaudio.mic {
+	background: transparent;
+	
+	padding: 0px 0px;
+	margin-right: 5px;
+}
+
+#sound {
+	background: transparent;
+	
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#cpu-temp {
+	background: transparent;
+	
+	transition-duration: 0.5s;
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#cpu {
+	background: transparent;
+	
+	transition-duration: 0.5s;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+#cpu:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #F2CFA7;
+}
+
+#cpu.critical {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #822A31;
+}
+
+#temperature {
+	background: transparent;
+	
+	transition-duration: 0.5s;
+	padding: 0px 0px;
+	margin: 0px 7px;
+}
+
+#temperature:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #3664A5;
+}
+
+#temperature.critical {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #822A31;
+}
+
+#battery {
+	background: transparent;
+	
+	transition-duration: 0.5s;
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#battery.good:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #7FAB7D;
+}
+
+#battery.warning:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #F6C080;
+}
+
+#battery.critical {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #822A31;
+}
+
+#battery.charging:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #7FAB7D;
+}
+
+#memory {
+	background: transparent;
+	
+	transition-duration: 0.5s;
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#memory:hover {
+	background: transparent;
+	transition-duration: 0.5s;
+	color: #F0EEA5;
+}
+
+#language {
+	background: transparent;
+	
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#tray {
+	background: transparent;
+	
+	padding: 0px 5px;
+	margin: 0px 10px;
+	margin-right: 5px;
+}
+
+#tray menu {
+	border: 1px solid @borders;
+	border-radius: 0px;
+}
+
+/*
+#tray menuitem:hover {
+transition-duration: 0.2s;
+background: #6D39AF;
+border: 0px solid rgba(109, 57, 175, 0.2);
+border-radius: 12px;
+}
+*/
+
+tooltip {
+	background: alpha(@theme_base_color, 1.0);
+	border: 1px solid @borders;
+	border-radius: 0px;
+}

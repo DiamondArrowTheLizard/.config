@@ -1,0 +1,6 @@
+interface {
+	font-size: 15pt;
+	background: rgba(22, 25, 37, 0.95);
+	border: 1px solid rgba(109, 57, 175, 0.2);
+	border-radius: 3mm;
+} 
