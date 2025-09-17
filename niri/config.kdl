@@ -248,7 +248,7 @@ layout {
         // left 15
         // right 15
         top -3
-        bottom 7
+        bottom 10
     }
 
     insert-hint {
@@ -356,7 +356,12 @@ window-rule {
 window-rule {
     match app-id="kitty"
     default-column-width { proportion 0.5; }
-    opacity 1.85
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="virt-manager"
+    opacity 0.9
 }
 
 window-rule {
