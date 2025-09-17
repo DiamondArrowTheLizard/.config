@@ -1,7 +1,8 @@
 { "reload_style_on_change": true,
     "layer": "top", 
     "position": "top",
-    "spacing": 0, 
+    "width": 1890, 
+    "margin-top": 3, 
 
     "modules-left": [
         "custom/menu",
@@ -187,7 +188,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 200,
-            "children-class": "not-cpu",
+            "children-class": "cpu",
             "transition-left-to-right": false
         },
         "modules": [
@@ -200,7 +201,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 200,
-            "children-class": "not-wifi",
+            "children-class": "network",
             "transition-left-to-right": false
         },
         "modules": [
@@ -213,7 +214,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 200,
-            "children-class": "not-pulseaudio",
+            "children-class": "pulseaudio",
             "transition-left-to-right": false
         },
         "modules": [

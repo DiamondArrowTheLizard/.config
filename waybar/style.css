@@ -7,37 +7,58 @@ window {
 	color: @theme_text_color;
 	background: transparent;
 	font-weight: normal;
+	padding: 0px 0px;
 }
 
 window#waybar {
 	opacity: 1;
-	border-radius: 12px;
 	transition-duration: 1.0s;
 	transition-property: window;
 	transition-duration: .5s;
 
-
-}
-
-box.modules-left {
-	background: alpha(@theme_base_color, 0.4);
+	background: alpha(@theme_base_color, 0.3);
 
 	border-radius: 12px;
 	border-width: 1px;
 
-	border: 1px solid alpha(@borders, 0.5);
+	border: 1px solid alpha(@borders, 0.4);
 
-	box-shadow: 0px 0px 4px #070017;
+	box-shadow: 0px 0px 0px #070017;
 
 	letter-spacing: 1px;
 
 	padding-left: 0px;
-	padding-right: 10px;
+	padding-right: 0px;
 
-	margin-left: 16px;
+	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 6px;
-	margin-bottom: 3px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+window#waybar.hidden {
+	transition-duration: 1.0s;
+}
+
+box.modules-left {
+	background: alpha(@theme_base_color, 0.0);
+
+	border-radius: 12px;
+	border-width: 1px;
+
+	border: 1px solid alpha(@borders, 0.0);
+
+	box-shadow: 0px 0px 0px #070017;
+
+	letter-spacing: 1px;
+
+	padding-left: 0px;
+	padding-right: 0px;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
 }
 
@@ -161,14 +182,14 @@ box.modules-left {
 
 box.modules-center {
 	all: initial;
-	background: alpha(@theme_base_color, 0.4);
+	background: alpha(@theme_base_color, 0.0);
 
 	border-radius: 12px;
 	border-width: 1px;
 
-	border: 1px solid alpha(@borders, 0.5);
+	border: 1px solid alpha(@borders, 0.0);
 
-	box-shadow: 0px 0px 4px #070017;
+	box-shadow: 0px 0px 0px #070017;
 
 	letter-spacing: 1px;
 
@@ -177,8 +198,8 @@ box.modules-center {
 
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 6px;
-	margin-bottom: 3px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
 }
 
@@ -190,14 +211,14 @@ box.modules-center {
 
 box.modules-right {
 	all: initial;
-	background: alpha(@theme_base_color, 0.4);
+	background: alpha(@theme_base_color, 0.0);
 
 	border-radius: 12px;
 	border-width: 1px;
 
-	border: 1px solid alpha(@borders, 0.5);
+	border: 1px solid alpha(@borders, 0.0);
 
-	box-shadow: 0px 0px 4px #070017;
+	box-shadow: 0px 0px 0px #070017;
 
 	letter-spacing: 1px;
 
@@ -205,9 +226,9 @@ box.modules-right {
 	padding-right: 2mm;
 
 	margin-left: 0px;
-	margin-right: 16px;
-	margin-top: 6px;
-	margin-bottom: 3px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
 }
 
