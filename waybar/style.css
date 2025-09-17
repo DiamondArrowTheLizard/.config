@@ -62,7 +62,7 @@ box.modules-left {
 	transition-duration: 0.5s;
 
 	border: 1px solid transparent;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -135,11 +135,19 @@ box.modules-left {
 	transition-duration: 0.5s;
 }
 
+#workspaces button#niri-workspace-Files {
+	transition-duration: 0.5s;
+}
+
 #workspaces button#niri-workspace-Media {
 	transition-duration: 0.5s;
 }
 
 #workspaces button#niri-workspace-Game {
+	transition-duration: 0.5s;
+}
+
+#workspaces button#niri-workspace-Virtual {
 	transition-duration: 0.5s;
 }
 

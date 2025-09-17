@@ -33,8 +33,10 @@
         "format": "<i><span font_size='7pt'>{index}</span></i><span font_size='10pt'>{icon}</span>",
         "format-icons": {
             "System": "System",
+            "Files": "Files",
             "Media": "Media",
             "Game": "Game",
+            "Virtual": "Virt",
             "Config": "Config",
             "Web": "Web",
             "Dev": "Dev",

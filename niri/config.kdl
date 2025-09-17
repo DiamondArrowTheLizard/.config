@@ -44,6 +44,7 @@ window-rule {
 workspace "System"
 window-rule {
     match at-startup=true app-id="kitty" title="btop"
+    open-focused false
     default-column-width { proportion 1.0; }
     open-on-workspace "System"
 }
@@ -59,6 +60,18 @@ spawn-at-startup "kitty" "btop"
 spawn-at-startup "kitty"
 spawn-at-startup "keepassxc"
 
+
+
+
+workspace "Files"
+window-rule {
+    match at-startup=true app-id="org.kde.dolphin"
+    default-column-width { proportion 1.0; }
+    open-focused false
+    open-on-workspace "Files"
+}
+
+spawn-sh-at-startup "dolphin /home/d-arrow"
 
 
 workspace "Media"
@@ -82,14 +95,25 @@ spawn-at-startup "vesktop"
 
 workspace "Game"
 window-rule {
-    match app-id="steam"
+    match at-startup=true app-id="steam"
     open-maximized true
+    open-focused false
     open-on-workspace "Game"
     border {
         off
     }
 }
 spawn-at-startup "steam"
+
+
+workspace "Virtual"
+window-rule {
+    match at-startup=true app-id="virt-manager"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Virtual"
+}
+spawn-sh-at-startup "virt-manager"
 
 
 
@@ -116,6 +140,12 @@ window-rule {
 
 overview {
     zoom 0.35
+}
+
+gestures {
+    hot-corners {
+        // off
+    }
 }
 
 input {
@@ -372,7 +402,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Run an Application runner" { spawn "anyrun"; }
+    Mod+Space hotkey-overlay-title="Run an Application runner" { spawn-sh "wofi --show drun"; }
     Super+Control+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
@@ -495,8 +525,10 @@ binds {
     Mod+Alt+9 { move-column-to-workspace 9; }
 
     Mod+S {focus-workspace "System"; }
+    Mod+F {focus-workspace "Files"; }
     Mod+M {focus-workspace "Media"; }
     Mod+G {focus-workspace "Game"; }
+    Mod+V {focus-workspace "Virtual"; }
     Mod+C {focus-workspace "Config"; }
     Mod+W {focus-workspace "Web"; }
     Mod+D {focus-workspace "Dev"; }
