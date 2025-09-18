@@ -256,6 +256,7 @@ box.modules-right {
 
 #custom-zapret-status {
 	background: transparent;
+	letter-spacing: -1px;
 	
 	padding: 0px 0px;
 	margin: 0px 5px;
