@@ -539,8 +539,10 @@ binds {
     Mod+D {focus-workspace "Dev"; }
 
     Mod+Alt+S {move-column-to-workspace "System"; }
+    Mod+Alt+F {move-column-to-workspace "Files"; }
     Mod+Alt+M {move-column-to-workspace "Media"; }
     Mod+Alt+G {move-column-to-workspace "Game"; }
+    Mod+Alt+V {move-column-to-workspace "Virtual"; }
     Mod+Alt+C {move-column-to-workspace "Config"; }
     Mod+Alt+W {move-column-to-workspace "Web"; }
     Mod+Alt+D {move-column-to-workspace "Dev"; }
@@ -580,7 +582,7 @@ binds {
 
     // Move the focused window between the floating and the tiling layout.
     Mod+Shift+Space       { toggle-window-floating; }
-    Mod+Alt+V { switch-focus-between-floating-and-tiling; }
+    Mod+Alt+Tab { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
