@@ -63,17 +63,17 @@ box.modules-left {
 }
 
 #custom-menu {
-	transition-duration: 1.0s;
+	transition-duration: 0.5s;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 15px;
-	margin-right: 0px;
+	margin-right: 5px;
 	
 }
 
 #custom-menu:hover {
-	transition-duration: 1.0s;
-	text-shadow: 1px 0px 0px @borders;
+	transition-duration: 0.5s;
+	text-shadow: 1px 1px 2px @borders;
 	color: @theme_selected_bg_color;
 }
 
@@ -87,11 +87,11 @@ box.modules-left {
 
 	margin-top: 3px;
 	margin-bottom: 3px;
-	margin-left: 15px;
+	margin-left: 12px;
 	margin-right: 0px;
 
-	padding: 0px 10pt;
-	padding-right: 11pt;
+	padding: 0px 8pt;
+	padding-right: 9pt;
 }
 
 #workspaces button.focused {
