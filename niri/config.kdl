@@ -50,7 +50,7 @@ window-rule {
 }
 
 window-rule {
-    match at-startup=true app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match at-startup=true app-id=r#"^org\.keepassxc\.KeePassXC$"# title=r#".*.kdbx \[Locked\] - KeePassXC"#
     default-column-width { proportion 1.0; }
     open-focused false
     open-on-workspace "System"
