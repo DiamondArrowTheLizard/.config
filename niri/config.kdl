@@ -383,6 +383,11 @@ binds {
     Mod+K     { focus-window-or-workspace-up; }
     Mod+L     { focus-column-right; }
 
+    Mod+Shift+H { set-column-width "-10%"; }
+    Mod+Shift+J { set-window-height "-10%"; }
+    Mod+Shift+K { set-window-height "+10%"; }
+    Mod+Shift+L { set-column-width "+10%"; }
+
     Mod+Alt+H     { move-column-left; }
     Mod+Alt+J     { move-window-down; }
     Mod+Alt+K     { move-window-up; }
