@@ -16,9 +16,9 @@ window#waybar {
 	transition-property: window;
 	transition-duration: .5s;
 
-	background: alpha(@theme_base_color, 0.3);
+	background: alpha(@theme_base_color, 0.2);
 
-	border-radius: 12px;
+	border-radius: 3px;
 	border-width: 1px;
 
 	border: 1px solid alpha(@borders, 0.4);
@@ -83,15 +83,14 @@ box.modules-left {
 	transition-duration: 0.5s;
 
 	border: 1px solid transparent;
-	letter-spacing: 0px;
+	letter-spacing: -1px;
 
-	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	margin-left: 12px;
 	margin-right: 0px;
 
 	padding: 0px 8pt;
-	padding-right: 9pt;
 }
 
 #workspaces button.focused {
@@ -111,12 +110,6 @@ box.modules-left {
 	background: alpha(@theme_selected_bg_color, 1.0);
 
 	border-radius: 5px;
-/*
-	border-left: 1px solid rgba(109, 57, 175, 0.15);
-	border-right: 1px solid rgba(109, 57, 175, 0.15);
-	border-top: 1px solid rgba(109, 57, 175, 0.15);
-	border-bottom: 1px solid rgba(109, 57, 175, 0.15);
-*/
 	border: 1px solid @theme_selected_bg_color;
 
 	opacity: 1.0;
@@ -203,10 +196,6 @@ box.modules-center {
 
 }
 
-#clock {
-	padding: 0px 5px;
-	margin: 0px 15px;
-}
 
 
 box.modules-right {
@@ -377,24 +366,28 @@ box.modules-right {
 	color: #F0EEA5;
 }
 
-#language {
-	background: transparent;
-	
-	padding: 0px 5px;
-	margin: 0px 10px;
-}
-
 #tray {
 	background: transparent;
 	
 	padding: 0px 5px;
 	margin: 0px 10px;
-	margin-right: 5px;
 }
 
 #tray menu {
 	border: 1px solid @borders;
 	border-radius: 0px;
+}
+
+#clock {
+	padding: 0px 5px;
+	margin: 0px 10px;
+}
+
+#language {
+	padding: 0px 5px;
+	margin: 0px 10px;
+
+	letter-spacing: 0px;
 }
 
 /*
