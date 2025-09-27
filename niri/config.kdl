@@ -127,12 +127,12 @@ spawn-at-startup "zen-browser"
 
 
 
-workspace "Dev"
+workspace "Edit"
 window-rule {
     match at-startup=true app-id="kitty" title="nvim"
     default-column-width { proportion 1.0; }
     open-maximized true
-    open-on-workspace "Dev"
+    open-on-workspace "Edit"
 }
 
 overview {
@@ -458,7 +458,7 @@ binds {
     Mod+G {focus-workspace "Game"; }
     Mod+V {focus-workspace "Virtual"; }
     Mod+W {focus-workspace "Web"; }
-    Mod+D {focus-workspace "Dev"; }
+    Mod+E {focus-workspace "Edit"; }
 
     Mod+Alt+S {move-column-to-workspace "System"; }
     Mod+Alt+F {move-column-to-workspace "Files"; }
@@ -466,7 +466,7 @@ binds {
     Mod+Alt+G {move-column-to-workspace "Game"; }
     Mod+Alt+V {move-column-to-workspace "Virtual"; }
     Mod+Alt+W {move-column-to-workspace "Web"; }
-    Mod+Alt+D {move-column-to-workspace "Dev"; }
+    Mod+Alt+E {move-column-to-workspace "Edit"; }
 
 
     Mod+Tab { focus-workspace-previous; }
