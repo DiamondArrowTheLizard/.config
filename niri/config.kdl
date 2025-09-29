@@ -17,7 +17,7 @@ hotkey-overlay {
 
 debug {}
 
-spawn-at-startup "systemctl" "--user" "start" "polkit-gnome"
+spawn-sh-at-startup "systemctl --user start plasma-polkit-agent.service"
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "kdeconnect-indicator"
@@ -192,14 +192,14 @@ layout {
     default-column-width {}
 
     focus-ring {
-        off
-        width 4
-        active-color "#7fc8ff"
-        inactive-color "#505050"
+        width 1.0
+        inactive-color "#50005035"
+        active-gradient from="#72359c3f" to="5f28815f" in="oklch longer hue" relative-to="workspace-view"
+        urgent-gradient from="#daaa5688" to="daaa56ff"
     }
 
     border {
-        
+        off 
         width 1.0
         inactive-color "#50005035"
         active-gradient from="#72359c3f" to="5f28815f" in="oklch longer hue" relative-to="workspace-view"
@@ -216,8 +216,8 @@ layout {
     }
 
     struts {
-        
-        
+        left 0
+        right 0
         top -3
         bottom 10
     }
