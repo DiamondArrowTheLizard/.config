@@ -5,6 +5,7 @@ environment {
     QT_QPA_PLATFORMTHEME "qt5ct"
     QT_STYLE_OVERRIDE "kvantum"
     MOZ_ENABLE_WAYLAND "1"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
 cursor {
