@@ -262,7 +262,7 @@ box.modules-right {
 	background: transparent;
 	
 	padding: 0px 0px;
-	margin-right: 5px;
+	margin-right: 0px;
 }
 
 #sound {
@@ -305,7 +305,7 @@ box.modules-right {
 	
 	transition-duration: 0.5s;
 	padding: 0px 0px;
-	margin: 0px 7px;
+	margin-right: 5px;
 }
 
 #temperature:hover {
