@@ -124,23 +124,18 @@ spawn-sh-at-startup "virt-manager"
 
 
 
-workspace "Web"
+workspace "Browse"
 window-rule {
     match at-startup=true app-id="zen"
     open-maximized true
-    open-on-workspace "Web"
+    open-on-workspace "Browse"
 }
 spawn-at-startup "zen-browser"
 
 
 
-workspace "Edit"
-window-rule {
-    match at-startup=true app-id="kitty" title="nvim"
-    default-column-width { proportion 1.0; }
-    open-maximized true
-    open-on-workspace "Edit"
-}
+workspace "Work"
+
 
 overview {
     zoom 0.35
@@ -466,16 +461,16 @@ binds {
     Mod+C {focus-workspace "Chat"; }
     Mod+G {focus-workspace "Game"; }
     Mod+V {focus-workspace "Virtual"; }
-    Mod+W {focus-workspace "Web"; }
-    Mod+E {focus-workspace "Edit"; }
+    Mod+B {focus-workspace "Browse"; }
+    Mod+W {focus-workspace "Work"; }
 
     Mod+Alt+S {move-column-to-workspace "System"; }
     Mod+Alt+F {move-column-to-workspace "Files"; }
     Mod+Alt+C {move-column-to-workspace "Chat"; }
     Mod+Alt+G {move-column-to-workspace "Game"; }
     Mod+Alt+V {move-column-to-workspace "Virtual"; }
-    Mod+Alt+W {move-column-to-workspace "Web"; }
-    Mod+Alt+E {move-column-to-workspace "Edit"; }
+    Mod+Alt+B {move-column-to-workspace "Browse"; }
+    Mod+Alt+W {move-column-to-workspace "Work"; }
 
 
     Mod+Tab { focus-workspace-previous; }
