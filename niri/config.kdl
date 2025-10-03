@@ -78,6 +78,26 @@ window-rule {
 spawn-sh-at-startup "dolphin /home/d-arrow"
 
 
+workspace "Game"
+window-rule {
+    match at-startup=true app-id="net.lutris.Lutris"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Game"
+}
+
+spawn-at-startup "lutris"
+
+
+workspace "Virtual"
+window-rule {
+    match at-startup=true app-id="virt-manager"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Virtual"
+}
+spawn-sh-at-startup "virt-manager"
+
 workspace "Chat"
 window-rule {
     match at-startup=true app-id=r#"^org\.telegram\.desktop$"#
@@ -100,28 +120,6 @@ window-rule {
 }
 spawn-at-startup "telegram-desktop"
 spawn-at-startup "vesktop"
-
-
-workspace "Game"
-window-rule {
-    match at-startup=true app-id="net.lutris.Lutris"
-    open-maximized true
-    open-focused false
-    open-on-workspace "Game"
-}
-
-spawn-at-startup "lutris"
-
-
-workspace "Virtual"
-window-rule {
-    match at-startup=true app-id="virt-manager"
-    open-maximized true
-    open-focused false
-    open-on-workspace "Virtual"
-}
-spawn-sh-at-startup "virt-manager"
-
 
 
 workspace "Browse"
