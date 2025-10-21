@@ -423,10 +423,10 @@ binds {
     Mod+Alt+N         { move-window-to-workspace-down; }
     Mod+Alt+P         { move-window-to-workspace-up; }
 
-    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
-    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
-    Mod+Alt+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-    Mod+Alt+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+WheelScrollDown      cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollUp        cooldown-ms=150 { focus-column-left; }
+    Mod+Alt+WheelScrollDown cooldown-ms=150 { move-column-right; }
+    Mod+Alt+WheelScrollUp   cooldown-ms=150 { move-column-left; }
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
