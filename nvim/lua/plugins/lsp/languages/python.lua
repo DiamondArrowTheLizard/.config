@@ -2,11 +2,11 @@ return {
     settings = {
         pylsp = {
             plugins = {
-                pyflakes = { enabled = false },
-                pycodestyle = { enabled = false },
+                pyflakes = { enabled = true },
+                pycodestyle = { enabled = true },
                 autopep8 = { enabled = false },
-                yapf = { enabled = false },
-                mccabe = { enabled = false },
+                yapf = { enabled = true },
+                mccabe = { enabled = true },
                 pylsp_mypy = { enabled = false },
                 pylsp_black = { enabled = false },
                 pylsp_isort = { enabled = false },
