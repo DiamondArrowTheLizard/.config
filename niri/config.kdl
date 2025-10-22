@@ -367,7 +367,7 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application runner" { spawn-sh "wofi --show drun"; }
-    // Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Control+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     XF86MonBrightnessUp allow-when-locked=true { spawn "blight" "set" "+5%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "blight" "set" "-5%"; }
@@ -393,15 +393,15 @@ binds {
     Mod+Shift+K { set-window-height "+10%"; }
     Mod+Shift+L { set-column-width "+10%"; }
 
-    Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
-    Mod+Ctrl+L     { move-column-right; }
+    Mod+Alt+H     { move-column-left; }
+    Mod+Alt+J     { move-window-down; }
+    Mod+Alt+K     { move-window-up; }
+    Mod+Alt+L     { move-column-right; }
 
     Mod+Comma     { consume-or-expel-window-left; }
     Mod+Period { consume-or-expel-window-right; }
-    Mod+Ctrl+Comma     { consume-or-expel-window-left; }
-    Mod+Ctrl+Period { consume-or-expel-window-right; }
+    Mod+Alt+Comma     { consume-or-expel-window-left; }
+    Mod+Alt+Period { consume-or-expel-window-right; }
 
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
@@ -413,30 +413,30 @@ binds {
     Mod+Up     { focus-monitor-up; }
     Mod+Right     { focus-monitor-right; }
 
-    Mod+Ctrl+Left  { move-workspace-to-monitor-left; }
-    Mod+Ctrl+Down  { move-workspace-to-monitor-down; }
-    Mod+Ctrl+Up    { move-workspace-to-monitor-up; }
-    Mod+Ctrl+Right { move-workspace-to-monitor-right; }
+    Mod+Alt+Left  { move-workspace-to-monitor-left; }
+    Mod+Alt+Down  { move-workspace-to-monitor-down; }
+    Mod+Alt+Up    { move-workspace-to-monitor-up; }
+    Mod+Alt+Right { move-workspace-to-monitor-right; }
 
     Mod+N              { focus-workspace-down; }
     Mod+P              { focus-workspace-up; }
-    Mod+Ctrl+N         { move-window-to-workspace-down; }
-    Mod+Ctrl+P         { move-window-to-workspace-up; }
+    Mod+Alt+N         { move-window-to-workspace-down; }
+    Mod+Alt+P         { move-window-to-workspace-up; }
 
     Mod+WheelScrollDown      cooldown-ms=150 { focus-column-right; }
     Mod+WheelScrollUp        cooldown-ms=150 { focus-column-left; }
-    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-right; }
-    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-left; }
+    Mod+Alt+WheelScrollDown cooldown-ms=150 { move-column-right; }
+    Mod+Alt+WheelScrollUp   cooldown-ms=150 { move-column-left; }
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
-    Mod+Ctrl+WheelScrollRight { move-column-right; }
-    Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+    Mod+Alt+WheelScrollRight { move-column-right; }
+    Mod+Alt+WheelScrollLeft  { move-column-left; }
 
     Mod+Shift+WheelScrollDown      { focus-column-right; }
     Mod+Shift+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+Alt+Shift+WheelScrollDown { move-column-right; }
+    Mod+Alt+Shift+WheelScrollUp   { move-column-left; }
 
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
@@ -447,15 +447,15 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
-    Mod+Ctrl+1 { move-column-to-workspace 1; }
-    Mod+Ctrl+2 { move-column-to-workspace 2; }
-    Mod+Ctrl+3 { move-column-to-workspace 3; }
-    Mod+Ctrl+4 { move-column-to-workspace 4; }
-    Mod+Ctrl+5 { move-column-to-workspace 5; }
-    Mod+Ctrl+6 { move-column-to-workspace 6; }
-    Mod+Ctrl+7 { move-column-to-workspace 7; }
-    Mod+Ctrl+8 { move-column-to-workspace 8; }
-    Mod+Ctrl+9 { move-column-to-workspace 9; }
+    Mod+Alt+1 { move-column-to-workspace 1; }
+    Mod+Alt+2 { move-column-to-workspace 2; }
+    Mod+Alt+3 { move-column-to-workspace 3; }
+    Mod+Alt+4 { move-column-to-workspace 4; }
+    Mod+Alt+5 { move-column-to-workspace 5; }
+    Mod+Alt+6 { move-column-to-workspace 6; }
+    Mod+Alt+7 { move-column-to-workspace 7; }
+    Mod+Alt+8 { move-column-to-workspace 8; }
+    Mod+Alt+9 { move-column-to-workspace 9; }
 
     Mod+S {focus-workspace "System"; }
     Mod+F {focus-workspace "Files"; }
@@ -465,13 +465,13 @@ binds {
     Mod+B {focus-workspace "Browse"; }
     Mod+W {focus-workspace "Work"; }
 
-    Mod+Ctrl+S {move-column-to-workspace "System"; }
-    Mod+Ctrl+F {move-column-to-workspace "Files"; }
-    Mod+Ctrl+C {move-column-to-workspace "Chat"; }
-    Mod+Ctrl+G {move-column-to-workspace "Game"; }
-    Mod+Ctrl+V {move-column-to-workspace "Virtual"; }
-    Mod+Ctrl+B {move-column-to-workspace "Browse"; }
-    Mod+Ctrl+W {move-column-to-workspace "Work"; }
+    Mod+Alt+S {move-column-to-workspace "System"; }
+    Mod+Alt+F {move-column-to-workspace "Files"; }
+    Mod+Alt+C {move-column-to-workspace "Chat"; }
+    Mod+Alt+G {move-column-to-workspace "Game"; }
+    Mod+Alt+V {move-column-to-workspace "Virtual"; }
+    Mod+Alt+B {move-column-to-workspace "Browse"; }
+    Mod+Alt+W {move-column-to-workspace "Work"; }
 
 
     Mod+Tab { focus-workspace-previous; }
@@ -479,6 +479,7 @@ binds {
 
     Mod+Shift+R { switch-preset-column-width; }
     Mod+Shift+V { switch-preset-window-height; }
+    Mod+Ctrl+R { reset-window-height; }
     Mod+Shift+M { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
@@ -493,14 +494,14 @@ binds {
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
-    Mod+Shift+Space { toggle-window-floating; }
+    Mod+Shift+Space       { toggle-window-floating; }
     Mod+Alt+Tab { switch-focus-between-floating-and-tiling; }
     
     Mod+Shift+Tab { toggle-column-tabbed-display; }
 
-    Mod+Alt+S { screenshot; }
-    Mod+Alt+A { screenshot-screen; }
-    Mod+Alt+W { screenshot-window; }
+    Mod+Ctrl+S { screenshot; }
+    Mod+Ctrl+A { screenshot-screen; }
+    Mod+Ctrl+W { screenshot-window; }
 
     Mod+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     
