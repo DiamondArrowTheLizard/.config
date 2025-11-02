@@ -9,7 +9,8 @@ environment {
 }
 
 cursor {
-    xcursor-theme "Sweet-cursors"
+    // xcursor-theme "Sweet-cursors"
+    xcursor-theme "Dracula-cursors"
 }
 
 hotkey-overlay {
