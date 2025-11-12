@@ -145,33 +145,6 @@ box.modules-left {
 }
 
 
-#workspaces button#niri-workspace-System {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Files {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Media {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Game {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Virtual {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Web {
-	transition-duration: 0.5s;
-}
-
-#workspaces button#niri-workspace-Dev {
-	transition-duration: 0.5s;
-}
 
 box.modules-center {
 	all: initial;
