@@ -31,7 +31,8 @@
 
     "niri/workspaces": {
         // "format": "<i><span font_size='7pt'>{index}</span></i><span font_size='10pt'>{icon}</span>",
-        "format": "<span font_size='10pt'>{icon}</span>",
+        "format": "<span font_size='10pt'>{name}</span>",
+        /*
         "format-icons": {
             "System": "System",
             "Files": "Files",
@@ -43,7 +44,6 @@
 
             "default": "Misc",
 
-            /*
 "System": "",
 "Media": "",
 "Game": "󰺷",
@@ -52,8 +52,8 @@
 "Dev": "",
 
 "default": "",
-*/
         },
+*/
     },
 
     "keyboard-state": {
