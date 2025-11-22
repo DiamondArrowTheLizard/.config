@@ -178,7 +178,6 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/menu.xml", // Menu file in resources folder
         "menu-actions": {
-            "update": "kitty yay && flatpak update",
             "shutdown": "poweroff",
             "reboot": "reboot",
         }
