@@ -9,7 +9,6 @@ environment {
 }
 
 cursor {
-    // xcursor-theme "Sweet-cursors"
     xcursor-theme "Dracula-cursors"
 }
 
@@ -134,6 +133,8 @@ spawn-at-startup "zen-browser"
 
 
 workspace "Work"
+
+workspace "Task"
 
 
 overview {
@@ -279,8 +280,13 @@ animations {
     }
 
     overview-open-close {
-        duration-ms 260
+        duration-ms 250
         curve "ease-out-expo"
+    }
+
+    recent-windows-close {
+        duration-ms 150
+        curve "ease-out-quad"
     }
 }
 
@@ -465,6 +471,7 @@ binds {
     Mod+V {focus-workspace "Virtual"; }
     Mod+B {focus-workspace "Browse"; }
     Mod+W {focus-workspace "Work"; }
+    Mod+T {focus-workspace "Task"; }
 
     Mod+Alt+S {move-column-to-workspace "System"; }
     Mod+Alt+F {move-column-to-workspace "Files"; }
@@ -473,19 +480,17 @@ binds {
     Mod+Alt+V {move-column-to-workspace "Virtual"; }
     Mod+Alt+B {move-column-to-workspace "Browse"; }
     Mod+Alt+W {move-column-to-workspace "Work"; }
-
-
-    Mod+Tab { focus-workspace-previous; }
+    Mod+Alt+T {move-column-to-workspace "Task"; }
 
 
     Mod+Shift+R { switch-preset-column-width; }
     Mod+Shift+V { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+Shift+M { maximize-column; }
+    Mod+Shift+E { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
     
-    Mod+Shift+E { expand-column-to-available-width; }
+    Mod+Shift+M { maximize-window-to-edges; }
     Mod+Shift+C { center-column; }
 
     Mod+Minus { set-column-width "-10%"; }
@@ -498,7 +503,7 @@ binds {
     Mod+Shift+Space       { toggle-window-floating; }
     Mod+Alt+Tab { switch-focus-between-floating-and-tiling; }
     
-    Mod+Shift+Tab { toggle-column-tabbed-display; }
+    Mod+Shift+T { toggle-column-tabbed-display; }
 
     Mod+Ctrl+S { screenshot; }
     Mod+Ctrl+A { screenshot-screen; }
@@ -509,6 +514,37 @@ binds {
     Ctrl+Alt+Escape { quit; }
     Mod+Shift+F1 { power-off-monitors; }
 
+}
+
+recent-windows {
+    // off
+    debounce-ms 750
+
+    open-delay-ms 175
+
+    highlight {
+        active-color "#72359c3f"
+        urgent-color "daaa56ff"
+        padding 0
+        corner-radius 8
+    }
+
+    previews {
+        max-height 1000
+        max-scale 1.00
+    }
+
+    binds {
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+        Alt+grave       { next-window     filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+        Mod+grave       { next-window     filter="app-id"; }
+        Mod+Shift+grave { previous-window filter="app-id"; }
+    }
 }
 
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "System"
