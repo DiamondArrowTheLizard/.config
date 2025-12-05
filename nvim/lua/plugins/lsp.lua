@@ -98,15 +98,9 @@ return {
                 'pyright',
                 'clangd',
                 'hyprls',
+                'neocmake',
             },
             handlers = {
-                function(server_name)
-                    if server_name == 'luals' then
-                        return
-                    end -- avoid starting with {}
-                    require('lspconfig')[server_name].setup {}
-                end,
-
                 lua_ls = function()
                     require 'plugins.lsp.languages.lua'
                 end,
@@ -120,7 +114,11 @@ return {
                 end,
 
                 hyprls = function()
-                    requrie 'plugins.lsp.languages.hyplang'
+                    require 'plugins.lsp.languages.hyplang'
+                end,
+
+                neocmake = function()
+                    require 'plugins.lsp.languages.neocmake'
                 end,
             },
         }
