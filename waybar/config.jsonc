@@ -127,7 +127,7 @@
             "critical": 20
         },
         "format": "<span font_size='15pt'>{icon}</span><span font_size='7pt'>{capacity}%</span>",
-        "format-plugged": "<span font_size='7pt'>{capacity}%</span>",
+        "format-plugged": "<span font_size='15pt'></span><span font_size='7pt'>{capacity}%</span>",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
