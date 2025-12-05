@@ -1,52 +1,9 @@
-environment {
-    XDG_CURRENT_DESKTOP "niri"
-    XDG_SESSION_TYPE "wayland"
-    QT_QPA_PLATFORM "wayland"
-    QT_QPA_PLATFORMTHEME "qt5ct"
-    QT_STYLE_OVERRIDE "kvantum"
-    MOZ_ENABLE_WAYLAND "1"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
-}
+include "config/include.kdl"
 
-cursor {
-    xcursor-theme "Dracula-cursors"
-}
 
-hotkey-overlay {
-    skip-at-startup
-}
 
-debug {}
 
-spawn-sh-at-startup "systemctl --user start plasma-polkit-agent.service"
-spawn-at-startup "waybar"
-spawn-at-startup "mako"
-spawn-at-startup "kdeconnect-indicator"
-
-prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png"
-
-spawn-at-startup "swaybg" "-i" "/home/d-arrow/.wallpapers/Niko1.png"
-
-layer-rule {
-    match namespace="^wallpaper$"
-    place-within-backdrop true
-}
-
-window-rule {
-    geometry-corner-radius 20
-    clip-to-geometry true
-    draw-border-with-background false
-    default-column-width { proportion 0.5; }
-}
-
-window-rule {
-    match is-floating=true
-    baba-is-float false
-    default-floating-position x=0 y=0 relative-to="top"
-}
-
-workspace "System"
+//workspace "System"
 window-rule {
     match at-startup=true app-id="kitty" title="btop"
     open-focused false
@@ -67,7 +24,7 @@ spawn-at-startup "keepassxc"
 
 
 
-workspace "Files"
+//workspace "Files"
 window-rule {
     match at-startup=true app-id="org.kde.dolphin"
     default-column-width { proportion 1.0; }
@@ -78,7 +35,7 @@ window-rule {
 spawn-sh-at-startup "dolphin /home/d-arrow"
 
 
-workspace "Game"
+//workspace "Game"
 window-rule {
     match at-startup=true app-id="net.lutris.Lutris"
     open-maximized true
@@ -89,7 +46,7 @@ window-rule {
 spawn-at-startup "lutris"
 
 
-workspace "Virtual"
+//workspace "Virtual"
 window-rule {
     match at-startup=true app-id="virt-manager"
     open-maximized true
@@ -98,7 +55,7 @@ window-rule {
 }
 spawn-sh-at-startup "virt-manager"
 
-workspace "Chat"
+//workspace "Chat"
 window-rule {
     match at-startup=true app-id=r#"^org\.telegram\.desktop$"#
     exclude title="^Media viewer$"
@@ -122,7 +79,7 @@ spawn-at-startup "telegram-desktop"
 spawn-at-startup "vesktop"
 
 
-workspace "Browse"
+//workspace "Browse"
 window-rule {
     match at-startup=true app-id="zen"
     open-maximized true
@@ -132,9 +89,9 @@ spawn-at-startup "zen-browser"
 
 
 
-workspace "Work"
+//workspace "Work"
 
-workspace "Task"
+//workspace "Task"
 
 
 overview {
@@ -517,10 +474,9 @@ binds {
 }
 
 recent-windows {
-    // off
     debounce-ms 750
 
-    open-delay-ms 175
+    open-delay-ms 275
 
     highlight {
         active-color "#72359c3f"
@@ -535,13 +491,8 @@ recent-windows {
     }
 
     binds {
-        Alt+Tab         { next-window; }
-        Alt+Shift+Tab   { previous-window; }
-        Alt+grave       { next-window     filter="app-id"; }
-        Alt+Shift+grave { previous-window filter="app-id"; }
-
-        Mod+Tab         { next-window; }
-        Mod+Shift+Tab   { previous-window; }
+        Mod+Tab         { next-window scope="workspace"; }
+        Mod+Shift+Tab   { previous-window scope="workspace"; }
         Mod+grave       { next-window     filter="app-id"; }
         Mod+Shift+grave { previous-window filter="app-id"; }
     }
