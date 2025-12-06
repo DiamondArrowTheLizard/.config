@@ -16,12 +16,12 @@ window#waybar {
 	transition-property: window;
 	transition-duration: .5s;
 
-	background: alpha(@theme_base_color, 0.2);
+	background: alpha(@theme_base_color, 0.0);
 
-	border-radius: 3px;
+	border-radius: 0px;
 	border-width: 1px;
 
-	border: 1px solid alpha(@borders, 0.4);
+	border-bottom: 1px solid alpha(@borders, 0.45);
 
 	box-shadow: 0px 0px 0px #070017;
 
@@ -199,7 +199,6 @@ box.modules-right {
 	
 	padding: 0px 5px;
 	margin: 0px 10px;
-	margin-left: 15px;
 }
 
 #network-zapret {
