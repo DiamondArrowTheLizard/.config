@@ -77,6 +77,11 @@ box.modules-left {
 	color: @theme_selected_bg_color;
 }
 
+#custom-updates.updated {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
 #custom-updates {
 	transition-duration: 0.5s;
 	margin-top: 0px;
