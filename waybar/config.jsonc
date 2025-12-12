@@ -5,8 +5,7 @@
     // "margin-top": 3, 
 
     "modules-left": [
-        "custom/menu",
-        "custom/updates",
+        "group/menu-updates",
         "niri/workspaces",
     ],
 
@@ -205,6 +204,19 @@
         },
         "exec-if": "which waybar-module-pacman-updates",
         "exec": "waybar-module-pacman-updates --no-zero-output" },
+
+    "group/menu-updates": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "children-class": "updates",
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "custom/menu",
+            "custom/updates",
+        ]
+    },
 
     "group/cpu-temp": {
         "orientation": "inherit",
