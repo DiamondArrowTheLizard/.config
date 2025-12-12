@@ -77,6 +77,20 @@ box.modules-left {
 	color: @theme_selected_bg_color;
 }
 
+#custom-updates {
+	transition-duration: 0.5s;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 0px;
+	letter-spacing: -1px;
+}
+
+#custom-updates:hover {
+	transition-duration: 0.5s;
+	text-shadow: 1px 1px 2px @borders;
+	color: @theme_selected_bg_color;
+}
 
 #workspaces button {
 	all: initial;
@@ -192,6 +206,11 @@ box.modules-right {
 	margin-top: 0px;
 	margin-bottom: 0px;
 
+}
+
+#mpris {
+	letter-spacing: -1px;
+	font-size: 9pt;
 }
 
 #backlight {
