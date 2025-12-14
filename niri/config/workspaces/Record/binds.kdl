@@ -1,0 +1,5 @@
+
+binds {
+    Mod+R { focus-workspace "Record"; }
+    Mod+Alt+R { move-column-to-workspace "Record"; }
+}

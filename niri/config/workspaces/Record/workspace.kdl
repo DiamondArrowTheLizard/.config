@@ -1,0 +1,4 @@
+workspace "Record"
+
+include "binds.kdl"
+include "startup-programs.kdl"
