@@ -1,0 +1,29 @@
+binds {
+    Mod+H { focus-column-left; }
+    Mod+J { focus-window-or-workspace-down; }
+    Mod+K { focus-window-or-workspace-up; }
+    Mod+L { focus-column-right; }
+
+    Mod+Home { focus-column-first; }
+    Mod+End  { focus-column-last; }
+
+    Mod+N { focus-workspace-down; }
+    Mod+P { focus-workspace-up; }
+
+    Mod+WheelScrollDown cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollUp cooldown-ms=150 { focus-column-left; }
+    Mod+WheelScrollRight cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollLeft cooldown-ms=150 { focus-column-left; }
+
+    Mod+1 { focus-column 1; }
+    Mod+2 { focus-column 2; }
+    Mod+3 { focus-column 3; }
+    Mod+4 { focus-column 4; }
+    Mod+5 { focus-column 5; }
+    Mod+6 { focus-column 6; }
+    Mod+7 { focus-column 7; }
+    Mod+8 { focus-column 8; }
+    Mod+9 { focus-column 9; }
+    Mod+0 { focus-column 10; }
+
+}

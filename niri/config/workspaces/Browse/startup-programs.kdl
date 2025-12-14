@@ -1,0 +1,7 @@
+
+window-rule {
+    match at-startup=true app-id="zen"
+    open-maximized true
+    open-on-workspace "Browse"
+}
+spawn-at-startup "zen-browser"

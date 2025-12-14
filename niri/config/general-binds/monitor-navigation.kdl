@@ -1,0 +1,11 @@
+binds {
+    Mod+Left { focus-monitor-left; }
+    Mod+Down { focus-monitor-down; }
+    Mod+Up { focus-monitor-up; }
+    Mod+Right { focus-monitor-right; }
+
+    Mod+Alt+Left { move-workspace-to-monitor-left; }
+    Mod+Alt+Down { move-workspace-to-monitor-down; }
+    Mod+Alt+Up { move-workspace-to-monitor-up; }
+    Mod+Alt+Right { move-workspace-to-monitor-right; }
+}

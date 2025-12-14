@@ -1,0 +1,5 @@
+
+binds {
+    Mod+S { focus-workspace "System"; }
+    Mod+Alt+S { move-column-to-workspace "System"; }
+}

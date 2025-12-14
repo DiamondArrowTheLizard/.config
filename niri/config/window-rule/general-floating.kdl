@@ -1,0 +1,5 @@
+window-rule {
+    match is-floating=true
+    baba-is-float false
+    default-floating-position x=0 y=0 relative-to="top"
+}

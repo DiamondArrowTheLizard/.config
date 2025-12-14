@@ -1,0 +1,4 @@
+binds {
+    Mod+Alt+Space { toggle-window-floating; }
+    Mod+Alt+Tab { switch-focus-between-floating-and-tiling; }
+}

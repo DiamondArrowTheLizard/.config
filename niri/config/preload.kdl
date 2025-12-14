@@ -1,0 +1,9 @@
+spawn-sh-at-startup "systemctl --user start plasma-polkit-agent.service"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-at-startup "kdeconnect-indicator"
+
+screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png"
+
+spawn-sh-at-startup "swaybg -i /home/d-arrow/.wallpapers/Niko1.png"
+

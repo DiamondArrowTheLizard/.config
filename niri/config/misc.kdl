@@ -1,0 +1,7 @@
+hotkey-overlay {
+    skip-at-startup
+}
+
+debug {}
+
+prefer-no-csd

@@ -1,0 +1,5 @@
+
+binds {
+    Mod+G { focus-workspace "Game"; }
+    Mod+Alt+G { move-column-to-workspace "Game"; }
+}

@@ -1,0 +1,18 @@
+
+include "process-execution.kdl"
+
+include "backlight.kdl"
+
+include "volume.kdl"
+
+include "close-window.kdl"
+
+include "workspace-navigation.kdl"
+
+include "window-resizing.kdl"
+
+include "window-moving.kdl"
+
+include "monitor-navigation.kdl"
+
+include "window-floating.kdl"

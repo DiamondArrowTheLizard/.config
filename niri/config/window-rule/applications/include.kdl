@@ -1,0 +1,17 @@
+
+include "telegram.kdl"
+
+include "codium.kdl"
+
+include "kitty.kdl"
+
+include "steam-notifications.kdl"
+
+include "telegram.kdl"
+
+include "virt-manager.kdl"
+
+include "wezterm.kdl"
+
+include "keepassxc.kdl"
+

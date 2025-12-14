@@ -1,0 +1,9 @@
+
+layout {
+
+    background-color "transparent"
+    gaps 25
+
+    center-focused-column "never"
+    always-center-single-column
+}

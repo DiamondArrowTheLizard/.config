@@ -1,0 +1,12 @@
+
+layout {
+
+    shadow {
+        on
+        draw-behind-window false
+        softness 7
+        spread 3
+        offset x=0 y=0
+        color "#070017ff"
+    }
+}

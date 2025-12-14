@@ -1,0 +1,18 @@
+
+window-rule {
+    match at-startup=true app-id="kitty" title="btop"
+    open-focused false
+    default-column-width { proportion 1.0; }
+    open-on-workspace "System"
+}
+
+window-rule {
+    match at-startup=true app-id=r#"^org\.keepassxc\.KeePassXC$"# title=r#".*.kdbx \[Locked\] - KeePassXC"#
+    default-column-width { proportion 1.0; }
+    open-focused false
+    open-on-workspace "System"
+}
+
+spawn-at-startup "kitty" "btop"
+spawn-at-startup "kitty"
+spawn-at-startup "keepassxc"

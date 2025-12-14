@@ -1,0 +1,9 @@
+
+window-rule {
+    match at-startup=true app-id="net.lutris.Lutris"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Game"
+}
+
+spawn-at-startup "lutris"

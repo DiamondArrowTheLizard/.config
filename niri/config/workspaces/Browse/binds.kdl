@@ -1,0 +1,5 @@
+
+binds {
+    Mod+B { focus-workspace "Browse"; }
+    Mod+Alt+B { move-column-to-workspace "Browse"; }
+}

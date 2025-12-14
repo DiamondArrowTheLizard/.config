@@ -1,0 +1,37 @@
+include "environment.kdl"
+
+include "cursor.kdl"
+
+include "preload.kdl"
+
+include "recent-windows.kdl"
+
+include "overview.kdl"
+
+include "layer-rule/include.kdl"
+
+include "window-rule/include.kdl"
+
+include "workspaces/include.kdl"
+
+include "general-binds/include.kdl"
+
+include "gestures/include.kdl"
+
+include "input/include.kdl"
+
+include "layout/include.kdl"
+
+
+
+
+
+
+
+
+
+
+
+include "animations.kdl"
+
+include "misc.kdl"

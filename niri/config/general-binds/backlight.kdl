@@ -1,0 +1,6 @@
+binds {
+    XF86MonBrightnessUp allow-when-locked=true { spawn "blight" "set" "+5%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "blight" "set" "-5%"; }
+    Shift+XF86MonBrightnessUp allow-when-locked=true { spawn "blight" "set" "+100%"; }
+    Shift+XF86MonBrightnessDown allow-when-locked=true { spawn "blight" "set" "-100%"; }
+}

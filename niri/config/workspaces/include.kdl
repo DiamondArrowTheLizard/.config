@@ -1,0 +1,13 @@
+include "System/workspace.kdl"
+
+include "Game/workspace.kdl"
+
+include "Chat/workspace.kdl"
+
+include "Files/workspace.kdl"
+
+include "Browse/workspace.kdl"
+
+include "Work/workspace.kdl"
+
+include "Task/workspace.kdl"

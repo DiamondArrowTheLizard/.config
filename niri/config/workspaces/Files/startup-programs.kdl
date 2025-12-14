@@ -1,0 +1,9 @@
+
+window-rule {
+    match at-startup=true app-id="org.kde.dolphin"
+    default-column-width { proportion 1.0; }
+    open-focused false
+    open-on-workspace "Files"
+}
+
+spawn-sh-at-startup "dolphin /home/d-arrow"

@@ -1,0 +1,9 @@
+layout {
+
+    struts {
+        left -1
+        right -1
+        top -9
+        bottom 0
+    }
+}

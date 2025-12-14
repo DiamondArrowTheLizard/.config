@@ -1,0 +1,7 @@
+
+layout {
+
+    insert-hint {
+        gradient from="#72359caa" to="5f2881ff" in="oklch shorter hue"
+    }
+}

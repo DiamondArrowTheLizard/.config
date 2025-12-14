@@ -1,0 +1,7 @@
+overview {
+    zoom 0.335
+}
+binds {
+    Mod+O repeat=false { toggle-overview; }
+}
+

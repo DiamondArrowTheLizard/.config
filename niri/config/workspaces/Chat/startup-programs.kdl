@@ -1,0 +1,17 @@
+
+window-rule {
+    match at-startup=true app-id=r#"^org\.telegram\.desktop$"#
+    exclude title="^Media viewer$"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Chat"
+}
+
+window-rule {
+    match at-startup=true app-id="vesktop"
+    open-maximized true
+    open-focused false
+    open-on-workspace "Chat"
+}
+spawn-at-startup "telegram-desktop"
+spawn-at-startup "vesktop"
