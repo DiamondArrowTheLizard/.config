@@ -3,6 +3,6 @@ input {
 
     mouse {}
 
-    warp-mouse-to-focus
+    warp-mouse-to-focus mode="center-xy"
     focus-follows-mouse max-scroll-amount="51%"
 }
