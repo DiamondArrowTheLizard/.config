@@ -1,9 +1,0 @@
-
-window-rule {
-    match at-startup=true app-id="com.obsproject.Studio"
-    default-column-width { proportion 1.0; }
-    open-focused false
-    open-on-workspace "Record"
-}
-
-spawn-sh-at-startup "obs"
