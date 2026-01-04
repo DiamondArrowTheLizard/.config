@@ -6,8 +6,8 @@ font=monospace 11
 background-color=#161925AA
 
 border-size=1
-border-color=#6D39AF
-border-radius=6
+border-color=#6D39AF35
+border-radius=15
 
 width=400
 height=150
