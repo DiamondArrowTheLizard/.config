@@ -13,6 +13,9 @@ return {
         -- Snippets
         'L3MON4D3/LuaSnip',
         'rafamadriz/friendly-snippets',
+
+        -- C# extended lsp
+        'Decodetalkers/csharpls-extended-lsp.nvim',
     },
     config = function()
         local autoformat_filetypes = {
@@ -43,7 +46,8 @@ return {
 
         -- Add borders to floating windows
         vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, { border = 'rounded' })
-        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = 'rounded' })
+        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help,
+            { border = 'rounded' })
 
         -- Configure error/warnings interface
         vim.diagnostic.config {
@@ -66,7 +70,8 @@ return {
         }
 
         local lspconfig_defaults = require('lspconfig').util.default_config
-        lspconfig_defaults.capabilities = vim.tbl_deep_extend('force', lspconfig_defaults.capabilities, require('cmp_nvim_lsp').default_capabilities())
+        lspconfig_defaults.capabilities = vim.tbl_deep_extend('force', lspconfig_defaults.capabilities,
+            require('cmp_nvim_lsp').default_capabilities())
 
         -- This is where you enable features that only work
         -- if there is a language server active in the file
@@ -75,16 +80,24 @@ return {
                 local opts = { buffer = event.buf }
 
                 vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
-                vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', { buffer = event.buf, desc = '[G]oto [d]efinition' })
-                vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', { buffer = event.buf, desc = '[G]oto [D]eclaration' })
-                vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', { buffer = event.buf, desc = '[G]oto [I]mplementation' })
-                vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<cr>', { buffer = event.buf, desc = '[G]oto [T]ype definition' })
-                vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', { buffer = event.buf, desc = '[G]oto [R]eferences' })
-                vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', { buffer = event.buf, desc = '[G]oto [S]ignature help' })
-                vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>', { buffer = event.buf, desc = '[G]et floating diagnostic [L]ist' })
+                vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [d]efinition' })
+                vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [D]eclaration' })
+                vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [I]mplementation' })
+                vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [T]ype definition' })
+                vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [R]eferences' })
+                vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>',
+                    { buffer = event.buf, desc = '[G]oto [S]ignature help' })
+                vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>',
+                    { buffer = event.buf, desc = '[G]et floating diagnostic [L]ist' })
                 vim.keymap.set('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
                 vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-                vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', { buffer = event.buf, desc = '[C]ode [A]ction' })
+                vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>',
+                    { buffer = event.buf, desc = '[C]ode [A]ction' })
             end,
         })
 
@@ -99,6 +112,7 @@ return {
                 'clangd',
                 'hyprls',
                 'neocmake',
+                'omnisharp',
             },
             handlers = {
                 lua_ls = function()
@@ -120,12 +134,23 @@ return {
                 neocmake = function()
                     require 'plugins.lsp.languages.neocmake'
                 end,
+
+                ['textDocument/definition'] = require('csharpls_extended').handler,
+                ['textDocument/typeDefinition'] = require('csharpls_extended').handler,
+                omnisharp = function()
+                    require 'plugins.lsp.languages.c_sharp'
+                end,
             },
         }
+
+        cmd = { csharpls }
+        vim.lsp.enable 'csharpls_extended'
+        require('csharpls_extended').buf_read_cmd_bind()
 
         local cmp = require 'cmp'
 
         require('luasnip.loaders.from_vscode').lazy_load()
+        require('csharpls_extended').buf_read_cmd_bind()
 
         vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
@@ -140,7 +165,7 @@ return {
             sources = {
                 { name = 'path' },
                 { name = 'nvim_lsp' },
-                { name = 'buffer', keyword_length = 3 },
+                { name = 'buffer',  keyword_length = 3 },
                 { name = 'luasnip', keyword_length = 2 },
             },
             snippet = {

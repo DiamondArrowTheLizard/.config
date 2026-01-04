@@ -2,8 +2,8 @@ return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     config = function()
-        local configs = require('nvim-treesitter.configs')
-        configs.setup({
+        local configs = require 'nvim-treesitter.configs'
+        configs.setup {
 
             highlight = {
                 enable = true,
@@ -46,6 +46,6 @@ return {
                 'kdl',
             },
             auto_install = true,
-        })
+        }
     end,
 }
