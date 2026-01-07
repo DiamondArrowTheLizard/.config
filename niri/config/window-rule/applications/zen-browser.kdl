@@ -1,0 +1,6 @@
+window-rule {
+    match app-id="zen"
+    geometry-corner-radius 5
+    clip-to-geometry true
+    draw-border-with-background false
+}
