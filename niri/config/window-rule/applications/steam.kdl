@@ -1,0 +1,8 @@
+
+window-rule {
+    match app-id="steam" title=r#"Steam"#
+    
+    geometry-corner-radius 0
+    clip-to-geometry true
+    draw-border-with-background false
+}

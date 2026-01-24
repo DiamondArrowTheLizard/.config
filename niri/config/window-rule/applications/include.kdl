@@ -16,3 +16,5 @@ include "wezterm.kdl"
 include "keepassxc.kdl"
 
 include "zen-browser.kdl"
+
+include "steam.kdl"
