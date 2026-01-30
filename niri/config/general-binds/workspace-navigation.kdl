@@ -7,8 +7,8 @@ binds {
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
 
-    Mod+N { focus-workspace-down; }
-    Mod+P { focus-workspace-up; }
+    Mod+N { spawn-sh "python3 ~/.config/niri/config/scripts/niri_peekaboo.py"; }
+    Mod+P { spawn-sh "python3 ~/.config/niri/config/scripts/niri_peekaboo.py -l"; }
 
     Mod+WheelScrollDown cooldown-ms=150 { focus-column-right; }
     Mod+WheelScrollUp cooldown-ms=150 { focus-column-left; }
