@@ -1,5 +1,5 @@
 
 binds {
     Mod+F { focus-workspace "Files"; }
-    Mod+Shift+F { move-column-to-workspace "Files"; }
+    Mod+Alt+F { move-column-to-workspace "Files"; }
 }

@@ -1,22 +1,22 @@
 binds {
-    Mod+Alt+H { set-column-width "-10%"; }
-    Mod+Alt+J { set-window-height "-10%"; }
-    Mod+Alt+K { set-window-height "+10%"; }
-    Mod+Alt+L { set-column-width "+10%"; }
+    Mod+Shift+H { set-column-width "-10%"; }
+    Mod+Shift+J { set-window-height "-10%"; }
+    Mod+Shift+K { set-window-height "+10%"; }
+    Mod+Shift+L { set-column-width "+10%"; }
 
-    Mod+Alt+R { switch-preset-column-width; }
-    Mod+Alt+V { switch-preset-window-height; }
-    Mod+Alt+E { maximize-column; }
-    Mod+Alt+F { fullscreen-window; }
+    Mod+Shift+R { switch-preset-column-width; }
+    Mod+Shift+V { switch-preset-window-height; }
+    Mod+Shift+E { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
 
-    Mod+Alt+M { maximize-window-to-edges; }
-    Mod+Alt+C { center-column; }
+    Mod+Shift+M { maximize-window-to-edges; }
+    Mod+Shift+C { center-column; }
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
 
-    Mod+Alt+Minus { set-window-height "-10%"; }
-    Mod+Alt+Equal { set-window-height "+10%"; }
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
 
-    Mod+Alt+T { toggle-column-tabbed-display; }
+    Mod+Shift+T { toggle-column-tabbed-display; }
 }
