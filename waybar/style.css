@@ -12,9 +12,9 @@ window {
 
 window#waybar {
 	opacity: 1;
-	transition-duration: 1.0s;
+	transition-duration: 0.3s;
 	transition-property: window;
-	transition-duration: .5s;
+	transition-duration: 0.3s;
 
 	background: alpha(@theme_base_color, 0.0);
 
@@ -63,16 +63,16 @@ box.modules-left {
 }
 
 #custom-menu {
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 15px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 8px;
 	
 }
 
 #custom-menu:hover {
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	text-shadow: 1px 1px 2px @borders;
 	color: @theme_selected_bg_color;
 }
@@ -83,7 +83,7 @@ box.modules-left {
 }
 
 #custom-updates {
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 5px;
@@ -92,7 +92,7 @@ box.modules-left {
 }
 
 #custom-updates:hover {
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	text-shadow: 1px 1px 2px @borders;
 	color: @theme_selected_bg_color;
 }
@@ -102,11 +102,11 @@ box.modules-left {
 	transition-duration: 0.3s;
 
 	border: 1px solid transparent;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
 
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 15px;
+	margin-left: 12px;
 	margin-right: 0px;
 
 	padding: 0px 10px;
@@ -264,7 +264,7 @@ box.modules-right {
 #cpu-temp {
 	background: transparent;
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	padding: 0px 5px;
 	margin: 0px 10px;
 }
@@ -272,86 +272,86 @@ box.modules-right {
 #cpu {
 	background: transparent;
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	padding: 0px 0px;
 	margin: 0px 0px;
 }
 
 #cpu:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #F2CFA7;
 }
 
 #cpu.critical {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #822A31;
 }
 
 #temperature {
 	background: transparent;
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	padding: 0px 0px;
 	margin-right: 5px;
 }
 
 #temperature:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #3664A5;
 }
 
 #temperature.critical {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #822A31;
 }
 
 #battery {
 	background: transparent;
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	padding: 0px 5px;
 	margin: 0px 10px;
 }
 
 #battery.good:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #7FAB7D;
 }
 
 #battery.warning:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #F6C080;
 }
 
 #battery.critical {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #822A31;
 }
 
 #battery.charging:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #7FAB7D;
 }
 
 #memory {
 	background: transparent;
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	padding: 0px 5px;
 	margin: 0px 10px;
 }
 
 #memory:hover {
 	background: transparent;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	color: #F0EEA5;
 }
 
