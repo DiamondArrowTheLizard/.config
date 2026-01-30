@@ -13,6 +13,4 @@ window-rule {
     open-on-workspace "System"
 }
 
-spawn-at-startup "kitty" "btop"
-spawn-at-startup "kitty"
-spawn-at-startup "keepassxc"
+spawn-sh-at-startup "kitty btop & kitty & keepassxc &"
