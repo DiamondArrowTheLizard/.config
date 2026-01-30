@@ -1,5 +1,4 @@
 binds {
-    Mod+Escape { close-window; }
 
     Mod+Ctrl+Slash { show-hotkey-overlay; }
 
