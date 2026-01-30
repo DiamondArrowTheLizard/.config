@@ -4,8 +4,8 @@ binds {
     Mod+Up { focus-monitor-up; }
     Mod+Right { focus-monitor-right; }
 
-    Mod+Alt+Left { move-workspace-to-monitor-left; }
-    Mod+Alt+Down { move-workspace-to-monitor-down; }
-    Mod+Alt+Up { move-workspace-to-monitor-up; }
-    Mod+Alt+Right { move-workspace-to-monitor-right; }
+    Mod+Shift+Left { move-workspace-to-monitor-left; }
+    Mod+Shift+Down { move-workspace-to-monitor-down; }
+    Mod+Shift+Up { move-workspace-to-monitor-up; }
+    Mod+Shift+Right { move-workspace-to-monitor-right; }
 }

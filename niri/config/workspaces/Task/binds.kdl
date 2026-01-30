@@ -1,5 +1,5 @@
 
 binds {
     Mod+T { focus-workspace "Task"; }
-    Mod+Alt+T { move-column-to-workspace "Task"; }
+    Mod+Shift+T { move-column-to-workspace "Task"; }
 }

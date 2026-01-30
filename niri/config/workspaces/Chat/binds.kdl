@@ -1,5 +1,5 @@
 
 binds {
     Mod+C { focus-workspace "Chat"; }
-    Mod+Alt+C { move-column-to-workspace "Chat"; }
+    Mod+Shift+C { move-column-to-workspace "Chat"; }
 }

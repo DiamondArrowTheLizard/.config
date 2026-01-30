@@ -1,23 +1,23 @@
 binds {
-    Mod+Alt+H { move-column-left; }
-    Mod+Alt+J { move-window-down; }
-    Mod+Alt+K { move-window-up; }
-    Mod+Alt+L { move-column-right; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+J { move-window-down; }
+    Mod+Shift+K { move-window-up; }
+    Mod+Shift+L { move-column-right; }
 
     Mod+Comma { consume-or-expel-window-left; }
     Mod+Period { consume-or-expel-window-right; }
-    Mod+Alt+Comma { consume-or-expel-window-left; }
-    Mod+Alt+Period { consume-or-expel-window-right; }
+    Mod+Shift+Comma { consume-or-expel-window-left; }
+    Mod+Shift+Period { consume-or-expel-window-right; }
 
-    Mod+Alt+Home { move-column-to-first; }
-    Mod+Alt+End { move-column-to-last; }
+    Mod+Shift+Home { move-column-to-first; }
+    Mod+Shift+End { move-column-to-last; }
 
-    Mod+Alt+N { move-window-to-workspace-down; }
-    Mod+Alt+P { move-window-to-workspace-up; }
+    Mod+Shift+N { move-window-to-workspace-down; }
+    Mod+Shift+P { move-window-to-workspace-up; }
 
-    Mod+Alt+WheelScrollDown cooldown-ms=150 { move-column-right; }
-    Mod+Alt+WheelScrollUp cooldown-ms=150 { move-column-left; }
+    Mod+Shift+WheelScrollDown cooldown-ms=150 { move-column-right; }
+    Mod+Shift+WheelScrollUp cooldown-ms=150 { move-column-left; }
 
-    Mod+Alt+WheelScrollRight { move-column-right; }
-    Mod+Alt+WheelScrollLeft { move-column-left; }
+    Mod+Shift+WheelScrollRight { move-column-right; }
+    Mod+Shift+WheelScrollLeft { move-column-left; }
 }
