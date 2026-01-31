@@ -286,6 +286,12 @@ box.modules-right {
 #cpu.critical {
 	background: transparent;
 	transition-duration: 0.3s;
+	box-shadow: inset 0 -3px #822A31;
+}
+
+#cpu.critical:hover {
+	background: transparent;
+	transition-duration: 0.3s;
 	color: #822A31;
 }
 
@@ -306,6 +312,13 @@ box.modules-right {
 #temperature.critical {
 	background: transparent;
 	transition-duration: 0.3s;
+	box-shadow: inset 0 -3px #822A31;
+}
+
+#temperature.critical:hover {
+	background: transparent;
+	transition-duration: 0.3s;
+	box-shadow: inset 0 -3px #822A31;
 	color: #822A31;
 }
 
@@ -330,6 +343,12 @@ box.modules-right {
 }
 
 #battery.critical {
+	background: transparent;
+	transition-duration: 0.3s;
+	box-shadow: inset 0 -3px #822A31;
+}
+
+#battery.critical:hover {
 	background: transparent;
 	transition-duration: 0.3s;
 	color: #822A31;
