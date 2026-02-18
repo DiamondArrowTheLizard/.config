@@ -16,14 +16,14 @@ window#waybar {
 	transition-property: window;
 	transition-duration: 0.3s;
 
-	background: alpha(@theme_base_color, 0.4);
+	background: alpha(@insensitive_bg_color, 0.35);
 
 	border-radius: 0px;
 	border-width: 1px;
 
-	border-bottom: 1px solid alpha(@borders, 0.45);
+	border-bottom: 0px solid alpha(@borders, 0.0);
 
-	box-shadow: 0px 0px 0px #070017;
+	box-shadow: inset 0px -5px 5px alpha(@borders, 0.5);
 
 	letter-spacing: 1px;
 
