@@ -16,7 +16,7 @@ window#waybar {
 	transition-property: window;
 	transition-duration: 0.3s;
 
-	background: alpha(@theme_base_color, 0.0);
+	background: alpha(@theme_base_color, 0.4);
 
 	border-radius: 0px;
 	border-width: 1px;
