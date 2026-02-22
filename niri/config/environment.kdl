@@ -1,7 +1,6 @@
 environment {
     XDG_CURRENT_DESKTOP "niri"
     XDG_SESSION_TYPE "wayland"
-    QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "qt5ct"
     QT_STYLE_OVERRIDE "kvantum"
     MOZ_ENABLE_WAYLAND "1"
