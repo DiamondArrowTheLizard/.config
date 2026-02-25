@@ -1,6 +1,6 @@
 
 window-rule {
-    match app-id="virt-manager"
+    match app-id="virt-manager" title="Virtual Machine Manager"
     open-maximized true
     opacity 0.9
 }
