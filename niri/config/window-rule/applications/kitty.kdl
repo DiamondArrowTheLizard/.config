@@ -3,6 +3,10 @@ window-rule {
     match app-id="kitty"
     default-column-width { proportion 0.5; }
     opacity 1.0
+
+    focus-ring {
+        width 1.5
+    }
 }
 
 window-rule {
