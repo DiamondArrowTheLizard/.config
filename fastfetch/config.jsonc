@@ -17,9 +17,14 @@
             "keyColor": "blue"
         },
         {
+            "type": "kernel",
+            "key": "├─",
+            "keyColor": "blue"
+        },
+        {
             "type": "uptime",
             "key": "├─󰅐",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "cpu",
@@ -32,11 +37,6 @@
             "keyColor": "green"
         },
         {
-            "type": "disk",
-            "key": "├─",
-            "keyColor": "green"
-        },
-        {
             "type": "shell",
             "key": "├─",
             "keyColor": "yellow"
@@ -45,7 +45,6 @@
             "type": "terminal",
             "key": "╰─",
             "keyColor": "yellow",
-            // "format": "{pretty-name} {version} {#37} {#97} {#36} {#96} {#35} {#95} {#34} {#94} {#33} {#93} {#32} {#92} {#31} {#91} {#30} {#90}"
             "format": "{pretty-name} {version} {#36} {#35} {#34} {#33} {#32} {#37} {#90} {#31} {#30} "
         },
     ]
