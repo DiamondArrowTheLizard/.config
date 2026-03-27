@@ -3,9 +3,9 @@ layout {
 
     tab-indicator {
         corner-radius 20
-        length total-proportion=0.5
-        width 5
-        active-gradient from="#72359cfa" to="5f2881fa" in="oklch longer hue"  relative-to="workspace-view"
+        length total-proportion=0.8
+        width 3
+        active-gradient from="#72359cff" to="5f2881ff" in="oklch longer hue"  
         inactive-color "#50005035"
     }
 }
