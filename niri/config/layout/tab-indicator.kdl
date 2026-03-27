@@ -5,7 +5,7 @@ layout {
         corner-radius 20
         length total-proportion=0.5
         width 5
-        active-gradient from="#72359c7a" to="5f28817a" in="oklch longer hue"  relative-to="workspace-view"
+        active-gradient from="#72359cfa" to="5f2881fa" in="oklch longer hue"  relative-to="workspace-view"
         inactive-color "#50005035"
     }
 }

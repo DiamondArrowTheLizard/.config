@@ -1,8 +1,8 @@
 layout {
 
     struts {
-        left -10
-        right -10
+        left -15
+        right -15
         top -15
         bottom -14
     }
