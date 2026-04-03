@@ -3,8 +3,6 @@ spawn-sh-at-startup "waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/w
 spawn-at-startup "mako"
 spawn-at-startup "kdeconnect-indicator"
 
-screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png"
-
 spawn-sh-at-startup "swaybg -i ~/.config/niri/wallpapers/Niko1.png"
 
 spawn-sh-at-startup "python3 ~/.config/niri/config/scripts/niri_tile_to_n.py"
