@@ -18,3 +18,5 @@ include "keepassxc.kdl"
 include "zen-browser.kdl"
 
 include "steam.kdl"
+
+include "emacs.kdl"
