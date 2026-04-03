@@ -13,5 +13,5 @@ window-rule {
     open-focused false
     open-on-workspace "Chat"
 }
-spawn-at-startup "telegram-desktop"
+spawn-at-startup "Telegram"
 spawn-at-startup "vesktop"
