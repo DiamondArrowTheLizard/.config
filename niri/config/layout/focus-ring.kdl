@@ -3,8 +3,8 @@ layout {
 
     focus-ring {
         width 1.0
-        inactive-color "#50005035"
-        active-gradient from="#72359c3f" to="5f28815f" in="oklch longer hue" relative-to="workspace-view"
+        inactive-color "#50005010"
+        active-gradient from="#72359c70" to="5f288190" in="oklch longer hue" relative-to="workspace-view"
         urgent-gradient from="#daaa5688" to="daaa56ff"
     }
 }
