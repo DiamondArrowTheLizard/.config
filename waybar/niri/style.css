@@ -19,11 +19,11 @@ window#waybar {
 	background: alpha(@insensitive_bg_color, 0.35);
 
 	border-radius: 0px;
-	border-width: 1px;
+	border-width: 0px;
 
 	border-bottom: 0px solid alpha(@borders, 0.0);
 
-	box-shadow: inset 0px -5px 5px alpha(@borders, 0.5);
+	box-shadow: inset 0px -5px 5px alpha(@borders, 0.45);
 
 	letter-spacing: 1px;
 
