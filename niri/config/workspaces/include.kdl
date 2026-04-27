@@ -2,7 +2,7 @@ include "System/workspace.kdl"
 
 include "Game/workspace.kdl"
 
-include "Record/workspace.kdl"
+// include "Record/workspace.kdl"
 
 include "Chat/workspace.kdl"
 
