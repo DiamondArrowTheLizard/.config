@@ -1,8 +1,6 @@
 { "reload_style_on_change": true,
     "layer": "top", 
     "position": "top",
-    // "width": 1890, 
-    // "margin-top": 3, 
 
     "modules-left": [
         "group/menu-updates",
@@ -30,30 +28,11 @@
     },
 
     "niri/workspaces": {
-        // "format": "<i><span font_size='7pt'>{index}</span></i><span font_size='10pt'>{icon}</span>",
         "format": "<span font_size='10pt'>{name}</span>",
-        /*
-        "format-icons": {
-            "System": "System",
-            "Files": "Files",
-            "Chat": "Chats",
-            "Game": "Games",
-            "Virtual": "Virt",
-            "Browse": "Browse",
-            "Work": "Work",
+    },
 
-            "default": "Misc",
-
-"System": "",
-"Media": "",
-"Game": "󰺷",
-"Config": "",
-"Web": "󰖟",
-"Dev": "",
-
-"default": "",
-        },
-*/
+    "niri/window": {
+        "format": "{title}",
     },
 
     "keyboard-state": {

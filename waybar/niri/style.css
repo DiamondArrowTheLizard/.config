@@ -102,7 +102,7 @@ box.modules-left {
 	transition-duration: 0.3s;
 
 	border: 1px solid transparent;
-	letter-spacing: -1px;
+	letter-spacing: 0px;
 
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -156,7 +156,12 @@ box.modules-left {
 	opacity: 1.0;
 }
 
-
+#window {
+	all: initial;
+	letter-spacing: -1px;
+	color: @theme_text_color;
+	margin-left: 12px;
+}
 
 box.modules-center {
 	all: initial;
