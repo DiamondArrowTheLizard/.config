@@ -6,9 +6,9 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application runner" { spawn-sh "wofi --show drun"; }
     Super+Control+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
-    Mod+Ctrl+S { screenshot; }
-    Mod+Ctrl+A { screenshot-screen; }
-    Mod+Ctrl+D { screenshot-window; }
+    Mod+Ctrl+S { screenshot show-pointer=false; }
+    Mod+Ctrl+A { screenshot-screen show-pointer=false; }
+    Mod+Ctrl+D { screenshot-window show-pointer=false; }
 
     Mod+Ctrl+F1 { power-off-monitors; }
 
