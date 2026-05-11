@@ -20,3 +20,5 @@ include "zen-browser.kdl"
 include "steam.kdl"
 
 include "emacs.kdl"
+
+include "vesktop.kdl"
