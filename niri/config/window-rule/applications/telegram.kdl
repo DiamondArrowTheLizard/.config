@@ -7,6 +7,8 @@ window-rule {
     background-effect {
         blur true
     }
+
+    block-out-from "screencast"
 }
 
 window-rule {
