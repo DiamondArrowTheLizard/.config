@@ -67,7 +67,7 @@ box.modules-left {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 10px;
-	margin-right: 5px;
+	margin-right: 0px;
 	
 }
 
@@ -109,7 +109,7 @@ box.modules-left {
 	margin-left: 12px;
 	margin-right: 0px;
 
-	padding: 0px 10px;
+	padding: 0px 8px;
 
 }
 
@@ -336,6 +336,12 @@ box.modules-right {
 }
 
 #battery.good:hover {
+	background: transparent;
+	transition-duration: 0.3s;
+	color: #7FAB7D;
+}
+
+#battery.normal:hover {
 	background: transparent;
 	transition-duration: 0.3s;
 	color: #7FAB7D;
