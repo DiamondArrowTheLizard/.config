@@ -107,13 +107,15 @@ export MANPAGER='nvim +Man!'
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+source ~/.config/zsh/kernel-dev-aliases.sh
+source ~/.config/zsh/pyenv.sh
 
 eval $(thefuck --alias fuck)
 
@@ -123,6 +125,8 @@ alias fetch="fastfetch"
 alias cletch="clear && fastfetch"
 alias ccletch="cd && clear && fastfetch"
 alias ccl="ccletch"
+alias reset="ccl"
+alias res="reset"
 alias vim="nvim"
 alias v="nvim"
 alias code="codium"
@@ -131,4 +135,3 @@ alias ssh="env TERM=kitty ssh"
 
 export EDITOR=nvim
 fetch
-
