@@ -3,3 +3,5 @@ include "wallpaper.kdl"
 include "privacy/include.kdl"
 
 include "waybar.kdl"
+
+include "mako.kdl"
