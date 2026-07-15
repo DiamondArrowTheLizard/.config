@@ -166,7 +166,8 @@
 
     "custom/menu": {
         // "format" : "<span font_size='15pt'><tt>󰣇</tt></span>",
-        "format" : "<span font_size='15pt'><tt>󰇈</tt></span>",
+        // "format" : "<span font_size='15pt'><tt>󰇈</tt></span>",
+        "format" : "<span font_size='15pt'>󰇈</span>",
         "tooltip": false,
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/menu.xml", 
