@@ -4,7 +4,7 @@ animations {
     slowdown 0.9
 
     workspace-switch {
-        duration-ms 300
+        duration-ms 220
         curve "ease-out-expo"
     }
 
