@@ -121,6 +121,7 @@ eval $(thefuck --alias fuck)
 
 compdef '_dispatch redis-cli_completion redis-cli' valkey-cli
 
+alias neofetch="fastfetch"
 alias fetch="fastfetch"
 alias cletch="clear && fastfetch"
 alias ccletch="cd && clear && fastfetch"
