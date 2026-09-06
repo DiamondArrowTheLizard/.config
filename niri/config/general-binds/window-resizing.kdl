@@ -6,7 +6,6 @@ binds {
 
     Mod+Shift+R { switch-preset-column-width; }
     Mod+Shift+V { switch-preset-window-height; }
-    Mod+Shift+E { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
     Mod+Shift+M { maximize-window-to-edges; }
