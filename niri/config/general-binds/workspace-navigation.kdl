@@ -10,10 +10,10 @@ binds {
     Mod+N { spawn-sh "python3 ~/.config/niri/config/scripts/niri_peekaboo.py"; }
     Mod+P { spawn-sh "python3 ~/.config/niri/config/scripts/niri_peekaboo.py -l"; }
 
-    Mod+WheelScrollDown cooldown-ms=150 { focus-column-right; }
-    Mod+WheelScrollUp cooldown-ms=150 { focus-column-left; }
-    Mod+WheelScrollRight cooldown-ms=150 { focus-column-right; }
-    Mod+WheelScrollLeft cooldown-ms=150 { focus-column-left; }
+    Mod+WheelScrollDown cooldown-ms=50 { focus-column-right; }
+    Mod+WheelScrollUp cooldown-ms=50 { focus-column-left; }
+    Mod+WheelScrollRight cooldown-ms=50 { focus-column-right; }
+    Mod+WheelScrollLeft cooldown-ms=50 { focus-column-left; }
 
     Mod+1 { focus-column 1; }
     Mod+2 { focus-column 2; }
