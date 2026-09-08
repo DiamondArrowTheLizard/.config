@@ -25,7 +25,7 @@ animations {
     }
 
     window-resize {
-        spring damping-ratio=1.95 stiffness=10000 epsilon=0.00001
+        spring damping-ratio=0.95 stiffness=3000 epsilon=0.00001
     }
 
     config-notification-open-close {
@@ -42,7 +42,7 @@ animations {
     }
 
     overview-open-close {
-        duration-ms 250
+        duration-ms 200
         curve "ease-out-expo"
     }
 
