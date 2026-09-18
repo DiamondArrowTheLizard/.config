@@ -4,7 +4,7 @@ binds {
     Mod+Shift+K { set-window-height "+10%"; }
     Mod+Shift+L { set-column-width "+10%"; }
 
-    Mod+Shift+R { switch-preset-column-width; }
+    Mod+Shift+R { maximize-column; }
     Mod+Shift+V { switch-preset-window-height; }
     Mod+Shift+F { fullscreen-window; }
 
