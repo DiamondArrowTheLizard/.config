@@ -5,7 +5,7 @@ window-rule {
     opacity 0.92
 
     background-effect {
-        blur true
+        blur false
     }
 
     block-out-from "screencast"

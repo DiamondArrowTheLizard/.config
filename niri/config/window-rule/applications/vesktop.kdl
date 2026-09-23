@@ -3,7 +3,7 @@ window-rule {
     default-column-width { proportion 1.0; }
 
     background-effect {
-        blur true
+        blur false
     }
 
     block-out-from "screencast"

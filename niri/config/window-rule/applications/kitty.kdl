@@ -5,7 +5,7 @@ window-rule {
     opacity 1.0
 
     focus-ring {
-        width 1.5
+        width 1.0
     }
 }
 
