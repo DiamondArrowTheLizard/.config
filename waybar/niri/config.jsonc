@@ -76,6 +76,10 @@
         }
     },
     "cpu": {
+        "states": {
+            "warning": 49,
+            "critical": 80
+        },
         "format": "<span font_size='15pt'></span><span font_size='7pt'>{usage}%</span>",
         "tooltip": true
     },
@@ -84,6 +88,10 @@
         "tooltip": true
     },
     "temperature": {
+        "states": {
+            "warning": 60,
+            "critical": 80
+        },
         "thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
         "critical-threshold": 80,
