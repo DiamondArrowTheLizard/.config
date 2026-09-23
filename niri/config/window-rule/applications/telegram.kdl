@@ -2,7 +2,7 @@
 window-rule {
     match app-id="org.telegram.desktop"
     default-column-width { proportion 1.0; }
-    opacity 0.92
+    opacity 0.99
 
     background-effect {
         blur false
