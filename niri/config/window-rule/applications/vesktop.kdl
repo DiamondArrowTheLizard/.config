@@ -7,4 +7,14 @@ window-rule {
     }
 
     block-out-from "screencast"
+
+    focus-ring {
+        width 1.0
+        inactive-color "#50005000"
+        active-color "#50005000"
+    }
+
+    shadow {
+        off
+    }
 }
