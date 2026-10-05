@@ -114,7 +114,6 @@ export MANPAGER='nvim +Man!'
 # cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
 source ~/.config/zsh/kernel-dev-aliases.sh
 source ~/.config/zsh/pyenv.sh
 
