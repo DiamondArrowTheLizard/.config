@@ -1,4 +1,5 @@
 spawn-sh-at-startup "systemctl --user start plasma-polkit-agent.service"
+spawn-sh-at-startup "alacritty --daemon"
 spawn-sh-at-startup "waybar -c ~/.config/waybar/niri/config.jsonc -s ~/.config/waybar/niri/style.css"
 spawn-at-startup "mako"
 spawn-at-startup "kdeconnect-indicator"
