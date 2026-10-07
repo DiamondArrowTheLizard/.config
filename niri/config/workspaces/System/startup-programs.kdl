@@ -2,7 +2,7 @@
 window-rule {
     match at-startup=true app-id="Alacritty" title="btop"
     open-focused true
-    default-column-width { proportion 1.0; }
+    open-maximized true
     open-on-workspace "System"
 }
 
@@ -13,4 +13,4 @@ window-rule {
     open-on-workspace "System"
 }
 
-spawn-sh-at-startup "alacritty msg create-window --title btop --command btop & alacritty & keepassxc &"
+spawn-sh-at-startup "alacritty -T \"btop\" -e btop & sleep 1 && keepassxc &"
