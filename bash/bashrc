@@ -21,6 +21,7 @@ if [ -f $PWD/.git-prompt.sh ]; then
     GIT_PS1_SHOWCOLORHINTS=true
     . $PWD/.git-prompt.sh
 fi
+HISTSIZE= HISTFILESIZE=
 
 function ps1 {
     local __format_reset="\e[0m"
