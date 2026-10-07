@@ -1,0 +1,5 @@
+[scrolling]
+history = 10000
+
+[mouse]
+hide_when_typing = true
