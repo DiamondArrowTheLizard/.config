@@ -1,0 +1,42 @@
+[[ $- == *i* ]] && source -- ~/.local/share/blesh/ble.sh --attach=none
+
+if [[ $- == *i* ]]; then
+    set -o vi
+fi
+
+eval $(thefuck --alias fuck)
+
+source ~/.config/bash/ls-colors.sh
+source ~/.config/bash/aliases.sh
+source ~/.config/bash/python/include.sh
+
+bind 'set completion-ignore-case on'
+
+if [ -f $PWD/.git-prompt.sh ]; then
+    GIT_PS1_SHOWDIRTYSTATE=true
+    GIT_PS1_SHOWSTASHSTATE=true
+    GIT_PS1_SHOWUNTRACKEDFILES=true
+    GIT_PS1_SHOWUPSTREAM="auto"
+    GIT_PS1_HIDE_IF_PWD_IGNORED=true
+    GIT_PS1_SHOWCOLORHINTS=true
+    . $PWD/.git-prompt.sh
+fi
+
+function ps1 {
+    local __format_reset="\e[0m"
+    local fr=$__format_reset
+    local __name_hostname_format="\e[38;5;105m\e[1m"
+    local __name_hostname="$__name_hostname_format\u@\h$fr"
+    local __working_dir_format="\e[38;5;111m\e[1m"
+    local __working_dir="$__working_dir_format\w$fr"
+    local __git="$(__git_ps1 "   %s ")"
+
+    export PS1="╭─$__name_hostname $__working_dir$__git\n╰─\$ "
+}
+
+export PROMPT_COMMAND=ps1
+export EDITOR=nvim
+
+fastfetch
+
+[[ ! ${BLE_VERSION-} ]] || ble-attach
