@@ -30,7 +30,7 @@ function ps1 {
     local __name_hostname="$__name_hostname_format\u@\h$fr"
     local __working_dir_format="\e[38;5;111m\e[1m"
     local __working_dir="$__working_dir_format\w$fr"
-    local __git="$(__git_ps1 "   %s ")"
+    local __git="$(__git_ps1 "\n│  %s " 2>/dev/null)"
 
     export PS1="╭─$__name_hostname $__working_dir$__git\n╰─\$ "
 }
