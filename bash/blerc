@@ -420,7 +420,7 @@ bleopt exec_errexit_mark=$'\e[91m[exit %d]\e[m'
 ## stty.  If this is enabled, when a command breaks the TTY state, the effect
 ## remains in later commands.
 
-#bleopt term_stty_restore=1
+bleopt term_stty_restore=
 
 
 ## The following setting specifies the cursor type when commands are executed.
@@ -485,20 +485,20 @@ bleopt exec_errexit_mark=$'\e[91m[exit %d]\e[m'
 ## "6.1", "6.2", "6.3", "7.0", "8.0", "9.0", "10.0", "11.0", "12.0", "12.1",
 ## "13.0", "14.0", "15.0", and "15.1".  The default value is "auto".
 
-#bleopt char_width_version=auto
+bleopt char_width_version=15.1
 
 
 ## "emoji_width" specifies the width of emoji characters.  If an empty value is
 ## specified, special treatment of emoji is disabled.
 
-#bleopt emoji_width=2
+bleopt emoji_width=2
 
 
 ## "emoji_version" specifies the version of Unicode Emoji.  Available values
 ## are 0.6, 0.7, 1.0, 2.0, 3.0, 4.0, 5.0, 11.0, 12.0, 12.1, 13.0, 13.1, 14.0,
 ## 15.0, and 15.1.
 
-#bleopt emoji_version=13.1
+bleopt emoji_version=15.1
 
 
 ## "emoji_opts" is a colon-separated list that represents the terminal
@@ -551,7 +551,7 @@ bleopt exec_errexit_mark=$'\e[91m[exit %d]\e[m'
 ## specifies that the keymap should be automatically selected from "emacs" or
 ## "vi" according to the current readline state "set -o emacs" or "set -o vi".
 
-#bleopt default_keymap=auto
+bleopt default_keymap=vi
 
 
 ## The following setting controls the treatment of isolated ESCs.  The value
@@ -1296,12 +1296,12 @@ function blerc/vim-load-hook {
 
   ## Cursor settings
 
-  #ble-bind -m vi_nmap --cursor 2
-  #ble-bind -m vi_imap --cursor 5
-  #ble-bind -m vi_omap --cursor 4
-  #ble-bind -m vi_xmap --cursor 2
-  #ble-bind -m vi_smap --cursor 2
-  #ble-bind -m vi_cmap --cursor 0
+  ble-bind -m vi_nmap --cursor 2
+  ble-bind -m vi_imap --cursor 5
+  ble-bind -m vi_omap --cursor 4
+  ble-bind -m vi_xmap --cursor 2
+  ble-bind -m vi_smap --cursor 2
+  ble-bind -m vi_cmap --cursor 0
 
   ## DECSCUSR setting
   ##
