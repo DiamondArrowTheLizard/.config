@@ -2,7 +2,7 @@
 window-rule {
     match at-startup=true app-id="Alacritty" title="btop"
     open-focused true
-    open-maximized true
+    open-maximized-to-edges true
     open-on-workspace "System"
 }
 
