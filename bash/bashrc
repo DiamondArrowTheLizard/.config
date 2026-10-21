@@ -37,6 +37,7 @@ function ps1 {
 
 export PROMPT_COMMAND=ps1
 export EDITOR=nvim
+export MANPAGER='nvim +Man!'
 
 fastfetch
 
