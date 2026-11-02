@@ -24,3 +24,5 @@ include "emacs.kdl"
 include "vesktop.kdl"
 
 include "alacritty.kdl"
+
+include "evince.kdl"
