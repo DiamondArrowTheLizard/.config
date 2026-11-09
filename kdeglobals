@@ -1,0 +1,156 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025000000000000001
+ColorEffect=2
+ContrastAmount=0.10000000000000001
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=83,15,146
+BackgroundNormal=30,34,51
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundInactive=102,106,115
+ForegroundLink=205,180,255
+ForegroundNegative=237,37,78
+ForegroundNeutral=255,106,0
+ForegroundNormal=195,199,209
+ForegroundPositive=113,247,159
+ForegroundVisited=82,148,226
+
+[Colors:Complementary]
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundLink=205,180,255
+
+[Colors:Selection]
+BackgroundAlternate=80,13,142
+BackgroundNormal=80,13,142
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundInactive=255,255,255
+ForegroundLink=77,6,136
+ForegroundNegative=237,37,78
+ForegroundNeutral=255,106,0
+ForegroundNormal=255,255,255
+ForegroundPositive=113,247,159
+ForegroundVisited=189,195,199
+
+[Colors:Tooltip]
+BackgroundAlternate=47,52,63
+BackgroundNormal=53,57,69
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundInactive=102,106,115
+ForegroundLink=205,180,255
+ForegroundNegative=237,37,78
+ForegroundNeutral=255,106,0
+ForegroundNormal=211,218,227
+ForegroundPositive=113,247,159
+ForegroundVisited=82,148,226
+
+[Colors:View]
+BackgroundAlternate=31,35,51
+BackgroundNormal=22,25,37
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundInactive=102,106,115
+ForegroundLink=205,180,255
+ForegroundNegative=237,37,78
+ForegroundNeutral=255,106,0
+ForegroundNormal=211,218,227
+ForegroundPositive=113,247,159
+ForegroundVisited=124,183,255
+
+[Colors:Window]
+BackgroundAlternate=47,52,63
+BackgroundNormal=24,27,40
+DecorationFocus=106,8,187
+DecorationHover=106,8,187
+ForegroundActive=106,8,187
+ForegroundInactive=102,106,115
+ForegroundLink=205,180,255
+ForegroundNegative=237,37,78
+ForegroundNeutral=255,106,0
+ForegroundNormal=211,218,227
+ForegroundPositive=113,247,159
+ForegroundVisited=179,13,191
+
+[DirSelect Dialog]
+DirSelectDialog Size=860,591
+History Items[$e]=file:$HOME/Downloads/Sweet
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xb4\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[General]
+AccentColor=106,8,187
+ColorSchemeHash=a054744e5da530142f039caa182148b170643d2e
+LastUsedCustomAccentColor=106,8,187
+TerminalApplication=alacritty
+TerminalService=alacritty.desktop
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=JetBrainsMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=JetBrainsMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=JetBrainsMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=JetBrainsMono Nerd Font Mono,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=JetBrainsMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[Icons]
+Theme=Tela-circle-purple-dark
+
+[KDE]
+LookAndFeelPackage=Sweet
+ShowDeleteCommand=true
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=180
+View Style=DetailTree
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[WM]
+activeBackground=47,52,63
+activeBlend=47,52,63
+activeFont=JetBrainsMono Nerd Font Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=211,218,227
+inactiveBackground=47,52,63
+inactiveBlend=47,52,63
+inactiveForeground=102,106,115
